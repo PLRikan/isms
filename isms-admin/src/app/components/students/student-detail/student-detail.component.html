@@ -1,0 +1,191 @@
+<div class="container">
+    <div>
+        <a [routerLink]="['/admin/students']" class="btn btn-back"><i class="fas fa-list"></i> List Students</a>
+        <p class="header-title">Student Information</p>
+    </div>
+   <form [formGroup]="checkoutFormInfo"  (ngSubmit)="updateInfo(checkoutFormInfo.value)" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="studentcode">Student Code</label>
+                    <input type="text" class="form-control" formControlName="studentcode" >
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" Name="password" value="password">
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="mname">Middle Name</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" formControlName="fname" >
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" formControlName="mname" >
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" formControlName="lname" >
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" formControlName="email">
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" class="form-control" formControlName="phonenumber">
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="addressapartment">Address Apartment</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="addressstreet">Address Street</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" formControlName="addressapartment">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" formControlName="addressstreet">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="addressdistrict">Address District</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="addresscity">Address City</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" formControlName="addressdistrict">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" formControlName="addresscity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="datestart">Date Start</label>
+                    <input type="date" formControlName="datestart" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label for="dateend">Date End</label>
+                    <input type="date" formControlName="dateend" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="dategraduate">Date Graduate</label>
+                    <input type="date" formControlName="dategraduate" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="faculty">Faculty</label>
+                        <select class="form-control" formControlName="facultyid">
+                            <option value="1" [selected]="true">--{{studentDetail?.facultyName}}--</option>
+                        </select>
+                </div>
+                <div class="form-group">
+                    <label for="major">Major</label>
+                    <select class="form-control" formControlName="majorstudentid">
+                        <option value="1" [selected]="true">--{{studentDetail?.majorStudentName}}--</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="educatetype">Educate Type</label>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="studytype">Study Type</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select class="form-control" formControlName="educatetypeid">
+                                <option value="1" [selected]="true">--{{studentDetail?.educateType}}--</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control" formControlName="studytypeid">
+                                <option value="1" [selected]="true">--{{studentDetail?.studyType}}--</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="studystatus">Study Status</label>
+                    <select class="form-control" formControlName="studystatusid">
+                        <option value="1" [selected]="true">Study Status</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="col-md-4 avt" >
+                <div class="text-center">
+                    <img src="../../../../assets/images/{{studentDetail?.avatar}}" alt="avata">
+                </div>
+                <div class="edit-avt">
+                    <div class="custom-file mb-3 ">
+                        <input type="file" class="custom-file-input" id="customFile" name="filename" (change)="getFile($event)">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <button type="submit" class="btn btn-update"><i class="fas fa-edit"></i> Update Information</button>
+    </form>
+
+    <div class="row">
+        <div class="BankAccount col-md-8">
+            <form [formGroup]="checkoutFormAcc" (ngSubmit)="updateInfo(checkoutFormAcc.value)">
+                <p>Bank Account</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="tutiondebt">Tution Debt</label>
+                            <input type="text" class="form-control" name="tutiondebt" value="{{studentDetail?.tutionDebt}}">  
+                        </div>
+                        <div class="form-group">
+                            <label for="tutionstatus">Tuition Status</label>
+                            <select class="form-control" name="tutionstatus">
+                                <option value="1">--{{studentDetail?.tutionStatusName}}--</option>
+                                <option value="">Tuition Status</option>
+                                <option value="">Tuition Status</option>
+                                <option value="">Tuition Status</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="accountnumber">Account Number</label>
+                            <input type="text" class="form-control" name="accountnumber" value="{{studentDetail?.accountNumber}}">
+                        </div>
+                        <div class="form-group">
+                            <label for="accountnumber">Bank Name</label>
+                            <input type="text" class="form-control" name="accountnumber" value="{{studentDetail?.bankName}}">
+                        </div>                    
+                    </div>
+                </div>       
+                <a href="" class="btn btn-update"><i class="fas fa-edit"></i> Bank Account</a> 
+            </form>    
+        </div>
+    </div>
+</div>

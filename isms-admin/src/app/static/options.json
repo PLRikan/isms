@@ -1,0 +1,62 @@
+{
+    "sidebarData": [{
+            "name": "Blog"
+        },
+        {
+            "id": "event",
+            "name": "Event",
+            "icon": "pe-7s-note2",
+            "url": "/admin/event",
+            "child": []
+        },
+        {
+            "id": "post",
+            "name": "Post",
+            "icon": "pe-7s-news-paper",
+            "url": "/admin/post"
+        },
+        {
+            "name": "Account"
+        },
+        {
+            "id": "students",
+            "name": "Students",
+            "icon": "pe-7s-users",
+            "url": "/admin/students"
+        },
+        {
+            "id": "lecturers",
+            "name": "Lecturers",
+            "icon": "pe-7s-user",
+            "url": "/admin/lecturers"
+        },
+        {
+            "id": "admins",
+            "name": "Admins",
+            "icon": "pe-7s-id",
+            "url": "/admin/admins"
+        },
+        {
+            "name": "More"
+        },
+        {
+            "id": "icon",
+            "name": "Icons",
+            "icon": "pe-7s-drop",
+            "url": "/admin/icons"
+        },
+        {
+            "id": "setting",
+            "name": "Setting",
+            "icon": "pe-7s-settings",
+            "url": "/admin/setting"
+        },
+        {
+            "id": "logout",
+            "name": "Logout",
+            "icon": "pe-7s-back",
+            "url": "/admin/logout"
+        }
+    ],
+    "logo": "/assets/images/logo-inverse.png"
+}

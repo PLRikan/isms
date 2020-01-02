@@ -1,0 +1,112 @@
+.events
+{
+    min-height: 0rem;
+    overflow: auto;
+    padding: 0rem 0rem 2rem 0rem;
+}
+h1
+{
+    display: inline-block;
+    padding: 0.5rem 2rem 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    background-color: #287094;
+    color: #fff;
+    border-radius: 0.125rem;
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.1);
+}
+.event
+{
+    padding: 2rem;
+    background: #fff;
+    min-height: 10rem;
+    margin: 0.5rem 0rem;
+    border-radius: 0.25rem;
+    border: 1px solid #E0E0E0;
+    overflow: auto;
+}
+
+.event img
+{
+    display: inline-block;
+    float: left;
+    width: 40%;
+    max-height: 20rem;
+    border-radius: 0.25rem;
+    margin: 0rem;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.event__info
+{
+    display: inline-block;
+    float: right;
+    max-height: 20rem;
+    width: 60%;
+    max-height: 20rem;
+    padding: 0rem 1rem 1rem 2rem;
+    margin: 0rem;
+}
+.event__info__name
+{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #287094;
+    margin: 0rem;
+}
+.event__info ul
+{
+    display: block;
+    padding: 1rem;
+}
+.event__register
+{
+    background: #fff;
+    min-height: 20rem;
+    padding: 2rem;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #E0E0E0;
+}
+.event__register__title
+{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: #A61E1E;
+    border-bottom: 2px dotted #A61E1E;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.event__register ul
+{
+    margin: 0rem 0rem 1rem 0rem;
+    padding: 0.5rem;
+    list-style-type: none;
+}
+.event__register label
+{
+    font-weight: 600;
+}
+.event__register input[type="text"]
+{
+    border: 0px;
+    outline: none;
+    padding: 0px;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #DADADA;
+    border-radius: 0px;
+}
+.event__register input[type="text"]:focus
+{
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    border-bottom: 2px solid #287094;
+}
+.event__register button
+{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+}

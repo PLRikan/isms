@@ -1,0 +1,60 @@
+<div class="container">
+    <div>
+        <a [routerLink]="['/admin/admins']" class="btn btn-back"><i class="fas fa-list"></i> List Admins</a>
+        <p class="header-title">Admin Information</p>
+    </div>
+    <form>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="rolegroup">Role Group</label>
+                    <select class="form-control" name="rolegroup">
+                        <option value="">RoleGroup</option>
+                        <option value="">RoleGroup</option>
+                        <option value="">RoleGroup</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="mname">Middle Name</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="fname">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="mname">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" name="lname">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" name="email">
+                </div>
+            </div>
+        </div>
+        <a href="" class="btn btn-update"><i class="fas fa-edit"></i> Update Information</a>
+    </form>
+</div>

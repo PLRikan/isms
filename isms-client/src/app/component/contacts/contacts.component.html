@@ -1,0 +1,11 @@
+<div class="contact-section">
+  <h1>Contact Us</h1>
+    <div class="border"></div>
+  <form class="contact-form">
+    <input type="text" class="contact-form-text" placeholder="Name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+    <input type="email" class="contact-form-text" placeholder="Email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="contact-form-text" placeholder="Title"  [(ngModel)]="title" [ngModelOptions]="{standalone: true}">
+    <textarea class="contact-form-text" placeholder="Question" [(ngModel)]="content" [ngModelOptions]="{standalone: true}"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>

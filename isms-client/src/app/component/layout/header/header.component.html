@@ -1,0 +1,57 @@
+<div class="container-fluid" style="background: #fff">
+    <header>
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 md-none sm-none xs-none"></div>
+            <div class="col-xl-2 col-lg-2 col-md-2 offset-xl-0 offset-lg-0 offset-md-1 sm-none xs-none">
+                <a href="./" class="iblck fl"><img src="../../assets/imgs/Logo.png"></a>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 offset-xl-0 offset-lg-0 offset-md-0 offset-sm-1 txt-center">
+                <div class="header__info">
+                    <h3>TRƯỜNG ĐẠI HỌC SƯ PHẠM TP.HỒ CHÍ MINH</h3>
+                    <h4>Cổng thông tin điện tử Phòng hợp tác Quốc tế</h4>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 txt-left">
+                <div class="header__social">
+                    <a href="https://hcmue.edu.vn/en/"><i class="fas fa-globe-asia"></i> Offical HCMUE website</a>
+                    <a href="https://online.hcmue.edu.vn/"><i class="fas fa-globe-asia"></i> Student infomation website</a>
+                    <a href="www.facebook.com"><i class="fab fa-facebook"></i> Fanpage HCMUE</a>
+                </div>
+            </div>
+            <div class="col-xl-1 col-lg-1 md-none sm-none xs-none"></div>
+        </div>
+        
+    </header>
+</div>
+<div class="container-fluid sticky navbar--top" id="myHeader">
+    <nav class="container navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#hideOnMobile" aria-controls="hideOnMobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="hideOnMobile">
+            <div class="row navbar-nav">
+                <a class="nav-item nav-link" href="./">HOME</a>
+                <a class="nav-item nav-link" href="./news">NEWS</a>
+                <a class="nav-item nav-link" href="./events">EVENTS</a>
+                <a class="nav-item nav-link" href="./contact">CONTACT</a>
+                <a class="nav-item nav-link" href="./aboutus">ABOUT US</a>
+                <a class="nav-item nav-link" href="./login">LOGIN</a>
+                <a class="nav-item nav-link" href="./logout">LOGOUT</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Keep the menu sticky -->
+    <script> 
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("cuztomSticky");
+            } else {
+                header.classList.remove("cuztomSticky");
+            }
+        }
+    </script>
+</div>

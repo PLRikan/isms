@@ -1,0 +1,226 @@
+header
+{
+    background-color: #fff;
+    padding-top: 1rem;
+    max-height: 20rem
+}
+header img
+{
+    width: 15rem;
+    height: 8rem;
+}
+.header__info
+{
+    padding: 1rem 1rem 0rem 1rem;
+}
+.header__social{margin-top: 1rem}
+.header__social a
+{
+    display: block;
+    color: #287094;
+}
+.header__social a i
+{
+    font-size: 1rem;
+}
+.header__social a:hover
+{
+    text-decoration: none;
+    color: #616161;
+}
+.header__info h3
+{
+    color: #287094;
+    font-weight: 600;
+}
+.header__info h4
+{
+    color: #616161
+}
+.sticky
+{
+    top: 0rem;
+    left: 0rem;
+    z-index: 1000;
+}
+.navbar--top
+{
+    background-color: #287094;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    font-family: 'Be Vietnam';   
+}
+.navbar--top .navbar
+{
+    padding : 0px;
+    min-height: 3rem;
+}
+.navbar--top .navbar-expand-lg .nav-link,.navbar--top__link
+{
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    min-height: 100%;
+    color: #fff;
+    background: #287094;
+}
+.navbar--top .navbar-expand-lg .nav-link:hover
+{
+    background: #fff;
+    color: #287094;
+    font-weight: 600;
+    box-shadow: inset 1px 0px 1px 0px rgba(0,0,0,0.2);
+    border:0px;
+    text-decoration: none;
+}
+.navbar-toggler-icon
+{
+    font-size: 1rem;
+    color: #fff;
+}
+.navbar--top__link:hover
+{
+    text-decoration: underline;
+}
+/* Extra small < 576px */
+@media only screen and (max-width: 575px){} /* chắc không ai xài điện thoại cực nhỏ đâu nên không cần quan tâm*/
+/* Small >= 576px */
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+    .header__info
+    {
+        padding: 0.25rem 0rem 0rem 0rem;
+    }
+    .header__info h3
+    {
+        font-size: 1rem;
+        margin-bottom: 0rem;
+    }
+    .header__info h4
+    {
+        font-size: 0.85rem;
+        margin-bottom: 0rem;
+    }
+    .header__social
+    {
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .header__social a
+    {
+        display: inline-block;
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    .header__social a i
+    {
+        font-size: 0.7rem;
+    }
+}
+/* Medium >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    header img
+    {
+        width: 8rem;
+        height: 4rem;
+    }
+    .header__info
+    {
+        padding: 0.5rem 1rem 0rem 1rem;
+    }
+    .header__info h3
+    {
+        font-size: 0.75rem;
+        margin-bottom: 0rem;
+    }
+    .header__info h4
+    {
+        font-size: 0.7rem;
+        margin-bottom: 0rem;
+    }
+    .header__social
+    {
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+    .header__social a
+    {
+        font-size: 0.7rem;
+    }
+    .header__social a i
+    {
+        font-size: 0.7rem;
+    }
+}
+/* Large >= 992 px */
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+    header img
+    {
+        width: 8rem;
+        height: 4rem;
+    }
+    .header__info
+    {
+        padding: 0.5rem 1rem 0rem 1rem;
+    }
+    .header__info h3
+    {
+        font-size: 0.82rem;
+        margin-bottom: 0rem;
+    }
+    .header__info h4
+    {
+        font-size: 0.75rem;
+        margin-bottom: 0rem;
+    }
+    .header__social
+    {
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
+    .header__social a
+    {
+        font-size: 0.75rem;
+    }
+    .header__social a i
+    {
+        font-size: 0.75rem;
+    }
+}
+/* Extra large >= 1200px */
+@media only screen and (min-width: 1200px)
+{
+    header img
+    {
+        width: 12rem;
+        height: 6rem;
+    }
+    .header__info
+    {
+        padding: 1rem 1rem 0rem 1rem;
+    }
+    .header__info h3
+    {
+        font-size: 1.25rem;
+        margin-bottom: 0rem;
+    }
+    .header__info h4
+    {
+        font-size: 0.95rem;
+        margin-bottom: 0rem;
+    }
+    .header__social
+    {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .header__social a
+    {
+        font-size: 0.95rem;
+    }
+    .header__social a i
+    {
+        font-size: 0.95rem;
+    }
+}

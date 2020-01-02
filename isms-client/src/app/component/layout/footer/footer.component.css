@@ -1,0 +1,26 @@
+footer
+{
+    background: #023246;
+    min-height: 15rem;
+    padding: 3rem 10% 5rem 10%;
+    color: #fff;
+    font-family: 'Be Vietnam';
+}
+footer h4,footer h5
+{
+    color: #F8E83B;
+}
+footer ul
+{
+    margin: 0rem;
+    padding: 0rem;
+    list-style-type: none;
+}
+footer ul li
+{
+    margin: 0.5rem 0rem;
+}
+footer a 
+{
+    color: #fff;
+}

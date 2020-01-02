@@ -1,0 +1,79 @@
+<div class="main-card mb-3 card">
+    <div class="card-header">
+        <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
+            <p>Lectures</p>
+            <div><a href="" class="btn" id="add-new"><i class="fas fa-plus"></i> Add new</a></div>
+            <div class="search-box">
+                <input type="text" placeholder="Student code or Name...">
+                <input type="submit" value="Search">
+            </div>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="align-middle text-truncate mb-0 table table-borderless table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center">#</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">University</th>
+                    <th class="text-center">Faculty</th>
+                    <th class="text-center">Major</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Phone Number</th>
+                    <th class="text-center">Study</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <td class="text-center vertical-midle">1</td>
+                    <td class="text-center vertical-midle"><a [routerLink]="['/admin/lecturers/detail']">Cao Quang Khai</a></td>
+                    <td class="text-center vertical-midle"> 
+                        <div class="text-center">Harvard University</div>
+                    </td>
+                    <td class="text-center vertical-midle">
+                        <div class="text-center">Công nghệ thông tin</div>
+                    </td>
+                    <td class="text-center vertical-midle">
+                        <div class="text-center">Công nghệ thông tin</div>
+                    </td>
+                    <td class="text-center vertical-midle">
+                        <div>abs@gmail.com</div>
+                    </td>
+                    <td class="text-center vertical-midle">
+                        <div>090909019</div>
+                    </td>
+                    <td class="text-center vertical-midle">
+                        <div>Đang học</div>
+                    </td>
+                    <td class="text-center vertical-midle">
+                        <a [routerLink]="['/admin/lecturers/detail']" class="btn btn-primary small"><i class="fas fa-edit"></i>edit</a>
+                        <a href="" class="btn btn-warning small"><i class="fas fa-trash"></i>delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>   
+    </div>
+    <div class="text-center">
+        <ul class="pagination modal-1">
+            <li><a href="#" class="prev">&laquo;</a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li> <a href="#">2</a></li>
+            <li> <a href="#">3</a></li>
+            <li> <a href="#">4</a></li>
+            <li> <a href="#">5</a></li>
+            <li> <a href="#">6</a></li>
+            <li> <a href="#">7</a></li>
+            <li> <a href="#">8</a></li>
+            <li> <a href="#">9</a></li>
+            <li><a href="#" class="next">&raquo;</a></li>
+        </ul>
+    </div>
+    <div class="d-block p-4 text-center card-footer">
+        <button class="btn-pill btn-shadow btn-wide fsize-1 btn btn-dark btn-lg">
+        <span class="mr-2 opacity-7">
+            <i class="fa fa-cog fa-spin"></i>
+        </span>
+        <span class="mr-1">View Complete Report</span>
+      </button>
+    </div>
+</div>

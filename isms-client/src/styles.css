@@ -1,0 +1,172 @@
+/* You can add global styles to this file, and also import other style files */
+*
+{
+    box-sizing: border-box;
+}
+/* ======================= ATOMIC ====================== */
+.txt-left {text-align: left}
+.txt-right {text-align: right}
+.txt-center{text-align: center}
+.fl {float:left}
+.fr {float:right}
+.iblck {display: inline-block}
+.blck {display: block}
+.mrg0{margin: 0}
+.padd0 {padding: 0}
+.padd10 {padding: 10%;}
+.w100 {width: 100%}
+.h100 {height: 100%;}
+.relative {position: relative}
+.absolute {position: absolute}
+.fixed {position: fixed}
+.sticky{position: sticky}
+.shadow1 {box-shadow: 1px 1px 0px 1px rgba(0,0,0,0.2);}
+.shadow2 {box-shadow: 2px 2px 1px 2px rgba(0,0,0,0.2);}
+.bradius {border-radius: 0.5rem}
+.nodeco {text-decoration: none;}
+.nooutline {outline: none;}
+/* ======================= CUSTOMIZE CSS ====================== */
+@font-face {
+    font-family: 'Be Vietnam';
+    src: url('../src/assets/fonts/BeVietnam/BeVietnam-Regular.ttf');
+  }
+html
+{ 
+    margin:0;
+    padding:0;
+    height:100%;
+}
+body
+{
+    min-height:100%;
+    position:relative;
+    font-family: 'Be Vietnam';
+    background: #f6f6f6;
+}
+.body
+{
+    background: #f6f6f6;
+    min-height: 50rem;
+    font-family: 'Be Vietnam';
+}
+.button
+{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    outline: none;
+    border: 0px;
+}
+.button:hover
+{
+    text-decoration: none;
+}
+.button--blue
+{
+    background: #287094;
+    color: #fff;
+}
+.button--blue:hover
+{
+    background: #1E5571;
+    color: #fff;
+}
+.button--back
+{
+    background: #287094;
+    color: #fff;
+}
+.button--joinevent
+{
+    background: #2EA61E;
+    color: #fff;
+}
+.button--joinevent:hover{background: #258418}   
+.button--readmore
+{
+    background: #2C80AB;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 0.8rem;
+}
+.button--readmore:hover
+{
+    background: #1E5571;
+    color: #fff;
+    text-decoration: none;
+}
+.pagination
+{
+    padding: 1rem 0rem;
+    margin: 1rem 0rem;
+}
+.pagi
+{
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin: 0rem 0.25rem 0rem 0.25rem;
+    color: #fff;
+    background: #868686;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    box-shadow: 1px 1px 0px 0px rgba(0,0,0,0.2);
+}
+.pagi:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background: #424242;
+}
+.pagi--active
+{
+    background : #287094;
+}
+.arrow
+{
+    color: #1E5571;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0rem 0.5rem; 
+}
+.fa-angle-left
+{
+    margin-right: 1rem;
+}
+.fa-angle-right
+{
+    margin-left: 1rem;
+}
+.cuztomSticky
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  RESPONSIVE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* Extra small < 576px */
+@media only screen and (max-width: 575px)
+{
+    .xs-none{display: none}
+}
+/* Small >= 576px */
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+    .sm-none{display: none}
+}
+/* Medium >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    .md-none{display: none}
+}
+/* Large >= 992 px */
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+    .lg-none{display: none}
+}
+/* Extra large >= 1200px */
+@media only screen and (min-width: 1200px)
+{
+    .xl-none{display: none}
+}

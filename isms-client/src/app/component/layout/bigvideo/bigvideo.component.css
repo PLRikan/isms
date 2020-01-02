@@ -1,0 +1,33 @@
+.bigvideo
+{
+    position: relative;
+    height: 100%;
+}
+.bigvideo video
+{
+    width: 100%;
+    display: block;
+}
+.bigvideo__slogan
+{
+    position: absolute;
+    width: 100%;
+    top: 32.5%;
+    left: 0;
+    color: #fff;
+    z-index: 500;
+}
+.bigvideo__slogan h1
+{
+    padding: 1rem;
+    display: inline-block;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.bigvideo__slogan .button--blue
+{
+    margin-top: 2rem;
+    padding: 1rem 1.4rem;
+    text-transform: uppercase;
+    border-radius: 0rem;
+}

@@ -1,0 +1,4 @@
+@media only screen and (max-width: 600px)
+{
+    .navbar-toggler-icon{padding: 0.35rem 0rem 0rem 0rem;}
+}

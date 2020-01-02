@@ -1,0 +1,29 @@
+.body
+{
+    min-height: 100%;
+    background-color: #e1e1e1;
+}
+.introduce
+{
+    padding: 2rem;
+    min-height: 20;
+    background: #fff;
+}
+.introduce h1
+{
+    padding: 1rem 2rem;
+    color: #023246;
+}
+.introduce .col-4
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.introduce img
+{
+    width: 60%;
+}
+.introduce .col-4:first-child img
+{
+    margin-top: 5%;
+}

@@ -1,0 +1,65 @@
+
+<app-ad-header></app-ad-header>
+
+<div class="row">
+    <ul class="col-lg-2" id=SideMenu>
+        <li><a href="">Dashboard</a></li>
+        <li>Account
+            <ul>
+                <li><a (click) ="showSubMenu(0)"><div class ="SideIcon"><i class="fas fa-users-cog"></i></div>Admin</a>
+                    <ul class="SubMenu" style="display: none">
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-list"></i></div>All Admin</a></li>
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-plus"></i></div>Add Admin</a></li>
+                    </ul>
+                </li>
+                <li><a (click) ="showSubMenu(1)"><div class ="SideIcon"><i class="fas fa-chalkboard-teacher"></i></div>Leacturer</a>
+                    <ul class="SubMenu" style="display: none">
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-list"></i></div>All Leacturer</a></li>
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-plus"></i></div>Add Leacturer</a></li>
+                    </ul>
+                </li>
+                <li><a (click) ="showSubMenu(2)"><div class ="SideIcon"><i class="fas fa-users"></i></div>Students</a>
+                    <ul class="SubMenu" style="display: none">
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-list"></i></div>All Students</a></li>
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-plus"></i></div>Add Student</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Blog
+            <ul>
+                <li><a (click) ="showSubMenu(3)"><div class ="SideIcon"><i class="fas fa-newspaper"></i></div>News</a>
+                    <ul class="SubMenu" style="display: none">
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-list"></i></div>All News</a></li>
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-plus"></i></div>Add News</a></li>
+                    </ul>
+                </li>
+                <li><a (click) ="showSubMenu(4)"><div class ="SideIcon"><i class="far fa-calendar-check"></i></div>Events</a>
+                    <ul class="SubMenu" style="display: none">
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-list"></i></div>All Events</a></li>
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-plus"></i></div>Add Devents</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>More
+            <ul>
+                <li><a (click) ="showSubMenu(5)"><div class ="SideIcon"><i class="far fa-id-card"></i></div>Contact</a>
+                    <ul class="SubMenu" style="display: none">
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-list"></i></div>All News</a></li>
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-plus"></i></div>Add News</a></li>
+                    </ul>
+                </li>
+                <li><a (click) ="showSubMenu(6)"><div class ="SideIcon"><i class="fas fa-cog"></i></div>Option</a>
+                    <ul class="SubMenu" style="display: none">
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-list"></i></div>All News</a></li>
+                        <li><a href=""><div class ="SideIcon"><i class="fas fa-plus"></i></div>Add News</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <div class="col-lg-10 admin-content">
+        <router-outlet></router-outlet>
+    </div>
+<div>

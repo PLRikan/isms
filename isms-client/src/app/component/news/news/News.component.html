@@ -1,0 +1,142 @@
+<div class="container-fluid body">
+    <div class="row">
+        <div class="col-lg-2">
+            <app-banner></app-banner>
+        </div>
+        <div class="col-lg-9 col-md-9 col-sm-9 news">
+            <!-- <h1><i class="fas fa-newspaper"></i> News</h1> -->
+            <div class="row">
+                <div class="col-6">
+                    <div class="new" *ngFor="let item of News">
+                        <a href="#"><img src="{{imageUrl}}{{item.thumbnail}}" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">{{item.title}}</a>
+                            <div class="new__info__short">
+                                {{item.content}}
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <!-- <div class="new">
+                        <a href="#"><img src="{{imageUrl}}army.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">Army class opening for new season 2019 - 2020</a>
+                            <div class="new__info__short">
+                                A new class about fighting tatics and battling will be opening at the Spring Season
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}ti9.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">DOTA2 become new subject to teaching in E-Sport class</a>
+                            <div class="new__info__short">
+                                Teaching how to play DOTA2 seriously and winning all games !
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}HariWon3.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">Hari Won break up Tran Thanh after 10 years of married life</a>
+                            <div class="new__info__short">
+                                Something was wrong with married life so that Ms.Hari Won decided to break up with Mr.Tran Thanh and start dating again with Mr.Tien Dat
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}HariWon3.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">Hari Won break up Tran Thanh after 10 years of married life</a>
+                            <div class="new__info__short">
+                                Something was wrong with married life so that Ms.Hari Won decided to break up with Mr.Tran Thanh and start dating again with Mr.Tien Dat
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}graduate.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">Gradute event will be celebrate in late July 2020</a>
+                            <div class="new__info__short">
+                                The celebrate of graduates will be place at HCMUE in late of July next year !
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}ukuniversity.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">UK Universities travel tour</a>
+                            <div class="new__info__short">
+                                A chance to visit ALL UK universities in 1 weeks, sign in now
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}rap.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">Spring Rap Battle at HCMUE !!!</a>
+                            <div class="new__info__short">
+                                Yeah you know the team represent the Southside !
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}exams.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">Last exam of 2019 season</a>
+                            <div class="new__info__short">
+                                Make sure that you won't miss the last exam of season
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div>
+                
+                    <div class="new">
+                        <a href="#"><img src="{{imageUrl}}HariWon3.jpg" class="iblck fl"></a>
+                        <div class="iblck fr new__info">
+                            <a routerLink="/news/detail/1" class="new__info__title">Hari Won break up Tran Thanh after 10 years of married life</a>
+                            <div class="new__info__short">
+                                Something was wrong with married life so that Ms.Hari Won decided to break up with Mr.Tran Thanh and start dating again with Mr.Tien Dat
+                            </div>
+                            <a href="#" class="button button--readmore">Read more</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="blck w100 txt-center pagination">
+            <a href="#" class="arrow"><i class="fas fa-angle-double-left"></i></a>
+            <a href="#" class="arrow"><i class="fas fa-angle-left"></i></a>
+            <a href="#" class="pagi pagi--active">1</a>
+            <a href="#" class="pagi">2</a>
+            <a href="#" class="pagi">3</a>
+            <a href="#" class="pagi">4</a>
+            <a href="#" class="pagi">5</a>
+            <a href="#" class="pagi">6</a>
+            <a href="#" class="pagi">7</a>
+            <a href="#" class="pagi">8</a>
+            <a href="#" class="pagi">9</a>
+            <a href="#" class="pagi">10</a>
+            <a href="#" class="arrow"><i class="fas fa-angle-right"></i></a>
+            <a href="#" class="arrow"><i class="fas fa-angle-double-right"></i></a>
+        </div>
+    </div>
+</div>

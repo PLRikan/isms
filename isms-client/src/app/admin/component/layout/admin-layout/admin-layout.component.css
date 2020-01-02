@@ -1,0 +1,39 @@
+#SideMenu{
+    background-color: #313131;
+    color: #ffffff;
+    padding-top: 4px;
+    padding-right: 0;
+}
+#SideMenu a{
+    color: #ffffff;
+}
+#SideMenu ul, #SideMenu li
+{
+    list-style-type: none;
+}
+#SideMenu ul{
+    padding: 0;
+}
+#SideMenu>li:first-child{
+    padding: 10px 0px 10px 13px;
+}
+#SideMenu li{
+    padding: 5px 0px 5px 13px;
+    cursor: pointer;
+}
+#SideMenu a {
+    padding: 5px 0px 5px 7px;
+    cursor: pointer;
+}
+.SubMenu{
+    display: none;
+    background-color: #444444;
+}
+.SideIcon{
+    display: inline-block;
+    width: 25px;
+}
+.tmp{
+    
+    
+}

@@ -1,0 +1,52 @@
+<div class="main-card mb-3 card">
+    <div class="card-header">
+        <div class="card-header-title font-size-lg text-capitalize font-weight-normal">Company Agents Status</div>
+    </div>
+    <div class="table-responsive">
+        <table class="align-middle text-truncate mb-0 table table-borderless table-hover">
+            <thead>
+                <tr>
+                    <th class="text-center">#</th>
+                    <th class="text-center">Thumbnail</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Date Start</th>
+                    <th class="text-center">Date End</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let event of eventList;let i = index">
+                    <td class="text-center text-muted" style="width: 80px;">#{{index}}</td>
+                    <td class="text-center" style="width: 80px;">
+                        <img width="40" class="rounded-circle" [src]="event.thumbnail" alt="">
+                    </td>
+                    <td class="text-center"><a [routerLink]="">{{event.name}}</a></td>
+                    <td class="text-center">
+                        <div class="badge badge-pill badge-danger">{{event.eventStatusName}}</div>
+                    </td>
+                    <td class="text-center">
+                        {{event.dateStart}}
+                    </td>
+                    <td class="text-center">
+                        {{event.dateEnd}}
+                    </td>
+                    <td class="text-center">
+                        <div role="group" class="btn-group-sm btn-group">
+                            <button class="btn-shadow btn btn-primary" [routerLink]="'/admin/event/detail/'+event.id">Detail</button>
+                            <button class="btn-shadow btn btn-primary">Delete</button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- <div class="d-block p-4 text-center card-footer">
+        <button class="btn-pill btn-shadow btn-wide fsize-1 btn btn-dark btn-lg">
+            <span class="mr-2 opacity-7">
+                <i class="fa fa-cog fa-spin"></i>
+            </span>
+            <span class="mr-1">View Complete Report</span>
+        </button>
+    </div> -->
+</div>
